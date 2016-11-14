@@ -14,5 +14,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello app user... \n want to play a game?"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/textBox" />
+
+    <Button
+        android:text="my btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:onClick="doBtn"
+        android:id="@+id/btn_hello" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/btn_hello">
+        <Button
+            android:text="revert"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:onClick="doBtnBack"
+            android:gravity="center"
+            android:id="@+id/btn_revert" />
+        <Button
+            android:text="New activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_revert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:onClick="changeIntent"
+            android:gravity="center"
+            android:id="@+id/btn_intent" />
+        <Button
+            android:text="Maps search"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_invert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:onClick="openMap"
+            android:gravity="center"
+            android:id="@+id/btn_maps" />
+    </LinearLayout>
 </RelativeLayout>

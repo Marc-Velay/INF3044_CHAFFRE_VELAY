@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CVProjects</string>
+    <string name="textBoxTxt">I now have a generic text.</string>
+    <string name="msg">You have modified the text.</string>
+    <string name="roastme">You have been served</string>
+    <string name="roastThat">You can\'t roast that!</string>
+    <string name="roastBread">You don\'t have bread: this is not Android GingerBread</string>
+    <string name="secondActivityWelcome">You have made it to the belly of the beast!</string>
 </resources>
