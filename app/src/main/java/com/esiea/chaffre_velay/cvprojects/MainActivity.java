@@ -2,17 +2,14 @@ package com.esiea.chaffre_velay.cvprojects;
 
 import android.app.DatePickerDialog;
 import android.app.NotificationManager;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     DatePickerDialog dpd;
     NotificationManager notMan;
     NotificationCompat.Builder builder;
+
+    public static final String BIERS_UPDATE = "com.esiea.chaffre_velay.cvprojects";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMap(View v) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=Londre")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=Batman")));
     }
 
     public void changeIntent(View v) {
